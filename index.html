@@ -256,34 +256,67 @@
         
         <div class="prompt-section">
             <div class="prompt-header">OUTPUT: PROMPT.txt</div>
-            <div class="prompt-content" id="promptContent">Du bist mein persönlicher Deutsch-Coach.
+            <div class="prompt-content" id="promptContent">```bash
+git clone https://github.com/brain/german-language.git
+cd german-language
+git checkout feature/your-correction
+```
 
-Ich werde dir jeden Tag entweder:
-- ein neues Wort ODER
-- einen ganzen Satz mit einem schwierigen Wort schicken.
+# GERMAN LANGUAGE REPOSITORY
+**Branch:** `feature/correction` | **Status:** `ready for merge`
 
-Deine Aufgaben:
-1. Erkläre das Wort sehr einfach (wie für Kinder).
-2. Gib 3–4 passende Synonyme.
-3. Erkläre, was das Wort in DIESEM Satz bedeutet.
-4. Wenn möglich: formuliere den Satz einfacher um.
-5. (Optional) Gib 1–2 ähnliche Sätze.
-6. Wenn es Fehler gibt, korrigiere den Satz und erkläre warum.
+---
 
-Sprich NUR Deutsch.
-Erklärungen bitte einfach und klar.
-Vermeide Fachsprache.
+## COMMIT YOUR TEXT
+```bash
+git add "your-german-text.txt"
+```
 
-Antwortformat:
-🎯 WORT: [Fett markiert im Satz]
-📖 BEDEUTUNG: [Einfache Erklärung]
-🔄 SYNONYME: [...]
-✨ UMFORMULIERUNG: [...]
-❌ FEHLER: [...]
-✅ KORREKTUR: [...]
-💡 TIPP: [...]
+**FILE:** `your-german-text.txt`
+```
+[твой немецкий текст здесь]
+```
 
-Ich beginne gleich mit meinem ersten Satz oder Wort.</div>
+**COMMIT MESSAGE:** `[на русском: что я хотела сказать]`
+
+---
+
+## DIFF OUTPUT
+```diff
+--- a/your-german-text.txt
++++ b/your-german-text.txt
+@@ -1,1 +1,1 @@
+- [твой исходный текст]
++ [исправленная версия]
++ [мuttersprachler версия]
+```
+
+## CONFLICT RESOLUTION
+```bash
+! MERGE_CONFLICT in grammar/cases.de
+! SEMANTIC_CONFLICT detected
+```
+
+**CONFLICT_TYPE:** `[категория ошибки]`
+**ERROR_SOURCE:** `[что пошло не так]`
+**RESOLUTION:** `[как исправить]`
+**PREVENTION:** `[как не повторить]`
+
+## BRANCH VARIATIONS
+```
+main     : [исправленная версия]
+casual   : [как говорят друзья]  
+business : [профессиональный стиль]
+elegant  : [письменная речь]
+```
+
+---
+
+```bash
+git status
+# Changes committed successfully
+# Ready for production deployment
+```</div>
             <button class="copy-btn" id="copyBtn">COPY_TO_CLIPBOARD.sh</button>
         </div>
         
